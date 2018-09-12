@@ -3,3 +3,25 @@ AWK commands
 - find data by patterns 
 - format output 
 - used on files with bulk data [ searching, conditional execution, updating and filtering ]
+
+print data:
+  awk ' { print $1 }' file_tab # will give you only first column 
+
+print more than 1 col:
+  awk ' { print $1 $3 }' file_tab # will give you col 1 and 3 but there will be no space 
+
+print more than 1 col with space:
+  awk ' { print $1 "  " $3 }' file_tab # will give you more than 1 col with space
+
+print entire content from file:
+  awk ' { print $0 }'
+
+print cols from csv file 
+  awk -F "," ' { print $1 }' file # -F allows you to define the separator 
+  awk -F "," ' { print $1 "  " $3 }' file 
+
+Another way to define Separator 
+  awk '{ print $2 }' FS="," file 
+
+Display content without displaying the header of the file 
+  awk 
