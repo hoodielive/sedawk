@@ -1,0 +1,7 @@
+id        name        salary
+1         esu         160000
+2         ori         130000
+3         ifa         180000
+4         obatala     900000
+5         osanyin     1000000
+6         osun        300000
